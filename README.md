@@ -332,7 +332,7 @@ ViewBag.ift = idr;
             string idd = (string)HttpContext.Session["id"];
             int id = Convert.ToInt32(idd);
             ViewBag.dio = id;
-            
+            hh
             if (id != 0) {
                 var id_hotel = (from ph in db.photo
                                 join h in db.hotel on ph.id_hotel equals h.id_hotel
